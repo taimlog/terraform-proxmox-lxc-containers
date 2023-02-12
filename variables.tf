@@ -15,12 +15,12 @@ variable "description" {
 
 variable "pool" {
   type    = string
-  default = "Development"
+  default = "pool-01"
 }
 
 variable "node_name" {
   type    = string
-  default = "Milkyway"
+  default = "node-01"
 }
 
 variable "vm_id" {
@@ -29,12 +29,12 @@ variable "vm_id" {
 
 variable "domain" {
   type    = string
-  default = "earth.ca"
+  default = "test.com"
 }
 
 variable "server" {
   type    = string
-  default = "192.168.2.100"
+  default = "192.168.0.1"
 }
 
 variable "ip_config_type" {
@@ -57,7 +57,7 @@ variable "cpu_cores" {
 
 variable "storage_pool" {
   type    = string
-  default = "Backend-store"
+  default = "storage"
 }
 
 variable "disk_size" {
@@ -77,7 +77,7 @@ variable "swap" {
 
 variable "network_bridge" {
   type    = string
-  default = "vmbr3"
+  default = "vmbr0"
 }
 
 variable "network_enabled" {
@@ -92,11 +92,11 @@ variable "mtu" {
 
 variable "datastore_template_location" {
   type    = string
-  default = "proxmoxstore"
+  default = "stoage"
 }
 variable "template_node_name" {
   type    = string
-  default = "Milkyway"
+  default = "node-01"
 }
 
 variable "source_file_path" {

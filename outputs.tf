@@ -1,6 +1,6 @@
 output "ubuntu_container_password" {
   value     = random_password.ubuntu_container_password.result
-  sensitive = false
+  sensitive = true
 }
 
 output "ubuntu_container_private_key" {

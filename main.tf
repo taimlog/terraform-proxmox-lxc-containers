@@ -1,11 +1,12 @@
 module "common-name-generator" {
-  source             = "../../../agnostic/naming-generator"
-  enabled            = var.naming-generator.naming_generator_enabled
-  environment        = var.naming-generator.environment
-  stage              = var.naming-generator.resource
-  name               = var.naming-generator.name
-  delimiter          = var.naming-generator.delimiter
-  labels_as_tags    = var.naming-generator.tags
+  source         = "taimlog/naming-generator/proxmox"
+  version        = "1.0.0"
+  enabled        = var.naming-generator.naming_generator_enabled
+  environment    = var.naming-generator.environment
+  stage          = var.naming-generator.resource
+  name           = var.naming-generator.name
+  delimiter      = var.naming-generator.delimiter
+  labels_as_tags = var.naming-generator.tags
 }
 
 resource "proxmox_virtual_environment_container" "ubuntu_container" {
